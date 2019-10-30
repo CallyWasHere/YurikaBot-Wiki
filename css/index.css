@@ -12,13 +12,15 @@
     height: 100;
     z-index: -1;
     margin: 0;
+    pointer-events: none;
 }
 
 body{
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     height: fullscreen;
     width: fullscreen;
-}
+} 
 
 .btext{
     color: #f9f3f4;
@@ -28,20 +30,16 @@ body{
     width: 100%;
     line-height: 0.4em;
 }
-
-.btn{
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    text-decoration: none;
-    border: #ccc 5px solid;
-    padding: 10px 15px;
-    border-radius: 8px;
-    line-height: 4em;
-}
-
-.btn:hover{
-    color: #b19295;
-    border: #fff 5px solid;
+button{
+  background-color: #AA6DA2;
+  border: none;
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
 p{
@@ -54,20 +52,49 @@ h1{
     font-size: 100px;
 }
 
-p2{
+.seperator{
     font-family: 'Open Sans', sans-serif;
-    color: #DC143C;
-    font-size: 75px;
-    position: absolute;
-    text-align: center;
-    top: 40%;
-    width: 100%;
-    line-height: 0.4em;
-    margin: 5px;
+    text-align: center !important;
+    background: #353e4c !important;
+    padding: 5px 6px !important;
+    color: #ecf2ff;
+    font-size: 50px !important
 }
 
 #particles-js{
   background-color: #2C2F33;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center !important;
+    background: #353e4c !important;
+    padding: 5px 6px !important;
+    color: #ecf2ff;
+    font-size: 12px !important
+}
+
+#navbar {
+  background-color: #333; 
+  position: fixed; 
+  top: -50px; 
+  width: 100%; 
+  transition: top 0.3s; 
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
