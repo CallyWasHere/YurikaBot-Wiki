@@ -62,9 +62,12 @@ h1{
 }
 
 #particles-js{
+  background-position: center;
+  background-image: url(../assets/pictures/background.png);
   background-color: #2C2F33;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .footer {
